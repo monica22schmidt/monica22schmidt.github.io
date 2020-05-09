@@ -1,15 +1,15 @@
-var imageIndex = 0
-showSlides(slideIndex);
+var imageIndex = 1;
+showSlides(imageIndex);
 
 function plusSlides(n){
-  showSlides(slideIndex +=n);
+  showSlides(imageIndex += n);
 }
 function currentSlide(n){
-  showSlides(slideIndex = n);
+  showSlides(imageIndex = n);
 }
 function showSlides(n){}
-  var image;
-  var images = document.getElementsbyClassName("slides")
+  var i;
+  var slides = document.getElementsbyClassName("slides")
   var circles = document.getElementsbyClassName("circle")
   if(n > slides.length){
     slideIndex = 1;
@@ -17,12 +17,12 @@ function showSlides(n){}
   if(n < 1){
     slideIndex = slides.length;
   }
-  for (image = 0; image < images.length; image++){
-    images[image].style.display = "none";
+  for (i = 0; i < slides.length; i++){
+    slides[i].style.display = "none";
   }
-  for (circle = 0; circle < circles.length; circle++){
-    circles[circle].className = circles[circle].className.replace(" active", "");
+  for (i = 0; i < circles.length; i++){
+    circles[i].className = circles[i].className.replace(" active", "");
   }
   images[imageIndex - 1].style.display = "block";
-  circles[slideIndex - 1].className += " active";
+  circles[imageIndex - 1].className += " active";
 }
