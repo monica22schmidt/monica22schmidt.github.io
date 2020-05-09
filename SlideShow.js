@@ -7,7 +7,7 @@ function plusSlides(n){
 function currentSlide(n){
   showSlides(imageIndex = n);
 }
-function showSlides(n){}
+function showSlides(n){
   var i;
   var slides = document.getElementsbyClassName("slides")
   var circles = document.getElementsbyClassName("circle")
