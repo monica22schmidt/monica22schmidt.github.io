@@ -1,12 +1,18 @@
-* {box-sizing: border-box}
+* {box-sizing:border-box}
+
+/* Slideshow container */
 .carousel {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
+
+/* Hide the images by default */
 .slides {
-  display: inline-block;
+  display: none;
 }
+
+/* Next & previous buttons */
 .previous, .next {
   cursor: pointer;
   position: absolute;
@@ -21,14 +27,20 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-.next{
-  right:0;
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
-.previous:hover, .next:hover{
+
+/* On hover, add a black background color with a little bit see-through */
+.previous:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-.caption{
+
+/* Caption text */
+.caption {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -37,6 +49,8 @@
   width: 100%;
   text-align: center;
 }
+
+/* Number text (1/3 etc) */
 .photonumber {
   color: #f2f2f2;
   font-size: 12px;
@@ -44,6 +58,8 @@
   position: absolute;
   top: 0;
 }
+
+/* The dots/bullets/indicators */
 .circle {
   cursor: pointer;
   height: 15px;
@@ -54,7 +70,8 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .circle:hover {
+
+.active, .cirlce:hover {
   background-color: #717171;
 }
 
