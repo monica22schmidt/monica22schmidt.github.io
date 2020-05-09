@@ -1,3 +1,4 @@
+* {box-sizing: border-box}
 .carousel {
   max-width: 1000px;
   position:relative;
