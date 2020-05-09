@@ -5,7 +5,7 @@
   margin: auto;
 }
 .slides {
-  display: none;
+  display: block;
 }
 .previous, .next {
   cursor: pointer;
